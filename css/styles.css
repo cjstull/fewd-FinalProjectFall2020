@@ -1,8 +1,45 @@
+
+	
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+	line-height: 1.5;
+	color:black;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* Layout Containers  */
+
+
+.main-header {
+	background: #ec9d1e;
+}
+
+.main-footer {
+	background: #ec9d1e;
+}
+
+.store-name {
+	color: white;
+}
+
+
 /*mobile first approach uses min-width media*/
 
 	/* Target viewport sizes 576px and wider */
 	@media (min-width: 576px) {
-
+		.wrapper {
+			min-height: 100vh;
+		}
     }
 	
 	
@@ -13,5 +50,4 @@
 	
 	/* Target viewport sizes 992px and wider */
 	@media (min-width: 992px) {
-    }
-    
+	}
