@@ -1,0 +1,17 @@
+/*mobile first approach uses min-width media*/
+
+	/* Target viewport sizes 576px and wider */
+	@media (min-width: 576px) {
+
+    }
+	
+	
+	/* Target viewport sizes 768px and wider */
+	@media (min-width: 768px) {
+	
+	}
+	
+	/* Target viewport sizes 992px and wider */
+	@media (min-width: 992px) {
+    }
+    
