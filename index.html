@@ -6,20 +6,25 @@
     <title>Wisconsin Cheese Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--CSS reset - normalize ver 8.0.1 -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Favicon -->
+    <link rel="shorcut icon" href="img/cheeseFavicon.ico">
 </head>
-<!--CSS reset - normalize ver 8.0.1 -->
+
 
 <body>
     <div class="wrapper">
-        <header class="main-header">
-            <h1 class="store-name">Wisconsin Cheese Store</a></h1>
-            <ul class="main-nav">
-                <li><a href="#">Buy Cheese</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="whatcheese.html">What Cheese Are You?</a></li>
-            </ul>
+        <header>
+            <h1 class="logo"><a href="">Nav</a></h1>
+            <a class="to_nav" href="#primary_nav">Menu</a>
         </header>
+
+
+            <h1 class="store-name">Wisconsin Cheese Store</a></h1>
+   
 
     <h2>Hello Fellow Cheese Enthusiasts!</h2>
     <p>If you're in the mood for some delicious cheese, you've come to the right place.</p>
@@ -35,7 +40,7 @@
     </figure>
 -->
 <!--First Attempt Create Shopping Cart-->
-<div class="shopping-cart"
+<div class="shopping-cart">
 
 <div class="column-labels">
     <label class="product-image">Image</label>
@@ -72,7 +77,7 @@
     </div>
     <div class="product-details">
       <div class="product-title">Brie</div>
-      <p class="product-description"></p>
+      <p class="product-description">Brie, along with its similarly creamy counterparts, is a bloomy rind cheese, immediately recognizable by its downy white rind (formed from the growth of the molds Geotrichum candidum or Penicillium camemberti) and its soft, delectably gooey paste</p>
     </div>
     <div class="product-price">26.99</div>
     <div class="product-quantity">
@@ -89,11 +94,12 @@
   <!--Cheddar Code-->
   <div class="product">
     <div class="product-image">
-      <img src="img/cheedar3.jpg">
+      <img src="img/cheddar3.jpg">
     </div>
     <div class="product-details">
       <div class="product-title">Cheddar Cheese</div>
-      <p class="product-description"></p>
+      <p class="product-description">Cheddar cheese originated in the village of Cheddar, Somerset, England.
+        Wisconsin’s Cheddar cheeses are some of the best in the world.</p>
     </div>
     <div class="product-price">12.00</div>
     <div class="product-quantity">
@@ -106,6 +112,27 @@
     </div>
     <div class="product-line-price">12.00</div>
   </div>
+
+    <!--Gouda Code-->
+    <div class="product">
+        <div class="product-image">
+          <img src="img/gouda3.jpg">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Gouda Cheese</div>
+          <p class="product-description">A farmhouse, raw cow milk Gouda (known as “boerenkaas” in Holland, the home of Gouda) this Gouda cheese rivals the Netherlands’ best cheeses in depth of flavor, complexity and balance.</p>
+        </div>
+        <div class="product-price">27.00</div>
+        <div class="product-quantity">
+          <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">
+            Remove
+          </button>
+        </div>
+        <div class="product-line-price">27.00</div>
+      </div>
 
 
 <!--Cart Total-->
@@ -171,6 +198,20 @@
     </div>
 -->
     </div>
+
+    <nav id="primary_nav">
+        <ul>
+            <li><a href="#">Buy Cheese</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="whatcheese.html">What Cheese Are You?</a></li>
+
+            <li><a href="example-2.html">Example 2</a></li>
+
+            <li><a href="#home">Top</a> </li>
+        </ul>
+</nav>
         <footer class="main-footer">
         <ul>
             <!--No actual business social links, so used WI daiyland for Twitter, my LinkedIn and my GitHub-->

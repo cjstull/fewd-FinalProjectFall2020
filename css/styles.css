@@ -1,5 +1,6 @@
 
-	
+
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -9,9 +10,27 @@ body {
 	color:black;
 	font-family: sans-serif;
 }
+p,
+ul {
+	margin: 0 0 1.5em;
+}
 
+ul {
+	list-style: disc;
+    padding: 0 0 0 20px;
+}
 a {
+	color: #1D745A;
 	text-decoration: none;
+}
+
+ 
+h2 {
+    font-family: ’PT Serif’, serif;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold;
 }
 
 footer {
@@ -27,10 +46,151 @@ footer {
 
 /* Layout Containers  */
 
+/* Shopping Cart Code 
+/* Global "table" column settings 
+	.product-image { float: left; width: 20%; }
+	.product-details { float: left; width: 37%; }
+	.product-price { float: left; width: 12%; }
+	.product-quantity { float: left; width: 10%; }
+	.product-removal { float: left; width: 9%; }
+	.product-line-price { float: left; width: 12%; text-align: right; }
+
+/* This is used as the traditional .clearfix class
+.group:before,
+.group:after {
+    content: '';
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
+/* Apply clearfix in a few places 
+.shopping-cart, .column-labels, .product, .totals-item {
+	@extend .group;
+  }
+
+/* Apply dollar signs 
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+	content: '$';
+  }
+
+  .shopping-cart {
+	margin-top: -45px;
+  }
+
+  /* Column headers 
+.column-labels {
+	  padding-bottom: 15px;
+	  margin-bottom: 15px;
+	  border-bottom: 1px solid
+	}
+	
+	.product-image, .product-details, .product-removal {
+	  text-indent: -9999px;
+	}
+  
+  
+  /* Product entries 
+.product {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid 
+}
+.product-image {
+	  text-align: center;
+	  img {
+		width: 100px;
+	  }
+	}
+	
+	.product-details {
+		{
+			margin-right: 20px;
+			font-family: $font-bold;
+		  }
+	  .product-title {
+		margin-right: 20px;
+		font-family: $font-bold;
+	  }
+	  .product-description {
+		margin: 5px 20px 5px 0;
+		line-height: 1.4em;
+	  }
+	}
+	
+	.product-quantity {
+	  input {
+		width: 40px;
+		
+	  }
+	}
+	
+	.remove-product {
+	  border: 0;
+	  padding: 4px 8px;
+	  background-color: #c66;
+	  color: #fff;
+	  font-family: $font-bold;
+	  font-size: 12px;
+	  border-radius: 3px;
+	}
+	
+	.remove-product:hover {
+	  background-color: #a44;
+	}
+  }
+  
+  
+  /* Totals section 
+	.totals-item {
+	  float: right;
+	  clear: both;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  
+.label {
+		float: left;
+		clear: both;
+		width: 79%;
+		text-align: right;
+	  }
+	  
+	  .totals-value {
+		float: right;
+		width: 21%;
+		text-align: right;
+	  }
+	
+	
+	.totals-item-total {
+	  font-family: $font-bold;
+	}
+  }
+  
+  .checkout {
+	float: right;
+	border: 0;
+	margin-top: 20px;
+	padding: 6px 25px;
+	background-color: #6b6;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 3px;
+  }
+  
+  .checkout:hover {
+	background-color: #494;
+  }
+  
+*/
+/*Pre shoping cart code*/
 
 .main-header {
 	background: #ec9d1e;
-
 }
 
 .main-footer {
@@ -44,6 +204,67 @@ footer {
 .cheese-inventory {
 	display: flex;
 	flex-direction: column;
+}
+
+.wrapper {
+}
+ 
+ 
+/*header*/
+ 
+header {
+    background:#ec9d1e;
+    padding: 15px 20px;
+}
+ 
+        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+         
+        header:after {
+            clear:both;
+        }
+         
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+ 
+h1.logo a {
+    color: #d8d8d8;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: 0.2em;
+}
+ 
+a.to_nav {
+    float: right;
+    color: #fff;
+    background: #4e4e4e;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+a.to_nav:hover,
+a.to_nav:focus {
+    color: #1c1c1c;
+	background: firebrick;
 }
 
 /*mobile first approach uses min-width media*/
@@ -62,3 +283,5 @@ footer {
 	/* Target viewport sizes 992px and wider */
 	@media (min-width: 992px) {
 	}
+
+
