@@ -19,9 +19,15 @@ ul {
 	list-style: disc;
     padding: 0 0 0 20px;
 }
+
+/* --Link Styles-- */
 a {
-	color: #1D745A;
+	color: #0499ff;
 	text-decoration: none;
+}
+/*changes color to standard hover color*/
+a:hover {
+	color: #6633ff;
 }
 
  
