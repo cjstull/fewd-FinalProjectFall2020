@@ -60,6 +60,10 @@ h2 {
     padding-bottom: .5em;
 }
 
+.main {
+    align-items: center;
+}
+
 
 /*centers the text in both the banner and main footer containers*/
 .banner,
@@ -74,8 +78,16 @@ h2 {
 	margin-bottom: 48px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .cheese-inventory {
     flex:1;
+   
 }
 
 .cheese-name {
@@ -85,6 +97,10 @@ h2 {
 
 .cheese-price {
 font-weight: bold;
+}
+
+.cheese-description {
+    margin: 0;
 }
 
 .main-footer {
@@ -104,13 +120,10 @@ font-weight: bold;
 .copyright p {
     text-align: center;
     display: block;
-    padding: 5px 5px;
+    padding: 1px 1px;
 }
 
-.cheese-inventory {
-	display: flex;
-	flex-direction: column;
-}
+
 
 
 
@@ -131,6 +144,13 @@ font-weight: bold;
         flex-direction: column;
         align-items: center;
     }
+/*changes the flex container to row at sizes 700px and above, turns on wraping of items, and displays items in the container with equal space between them*/
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 }
 
 /* Target viewport sizes 992px and wider */
