@@ -9,17 +9,19 @@
 body {
 	line-height: 1.5;
 	color:black;
-	font-family: sans-serif;
+    font-family: sans-serif;
+    margin:0;
 }
-
-p,
-ul {
-	margin: 0 0 1.5em;
-}
-
+/*liststyle none removes icons to the left of the list*/
 ul {
 	list-style: none;
-    padding: 0 0 0 20px;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: .90em;
+    margin-bottom: 1.8em;
 }
 
 img {
@@ -57,15 +59,34 @@ footer {
 ==================================== */
 
 .main-header {
-	background: #ec9d1e;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+/*centers the text in both the banner and main footer containers*/
+.banner,
+.main-footer {
+    text-align: center;
+}
+
+.banner {
+    color: #fff;
+	background: orange;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
 }
 
 .main-footer {
 	background: #ec9d1e;
 }
 
-.store-name {
-	color: white;
+/*this code affect anchor tag in the store-name and .main-nav containers*/
+.store-name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
 }
 
 .cheese-inventory {
@@ -73,67 +94,7 @@ footer {
 	flex-direction: column;
 }
 
-.wrapper {
 
-}
- 
- 
-/*header*/
- 
-header {
-    background:#ec9d1e;
-    padding: 15px 20px;
-}
- 
-        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-        header:before,
-        header:after {
-            content:"";
-            display:table;
-        }
-         
-        header:after {
-            clear:both;
-        }
-         
-        /* For IE 6/7 (trigger hasLayout) */
-        header {
-            zoom:1;
-        }
- 
-h1.logo a {
-    color: #d8d8d8;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 22px;
-    float: left;
-    letter-spacing: 0.2em;
-}
- 
-a.to_nav {
-    float: right;
-    color: #fff;
-    background: #4e4e4e;
-    text-decoration: none;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 22px;
-    height: 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
- 
-a.to_nav:hover,
-a.to_nav:focus {
-    color: #1c1c1c;
-	background: firebrick;
-}
 
 /* ================================= 
   Media Queries
@@ -141,13 +102,25 @@ a.to_nav:focus {
 
 /*mobile first approach uses min-width media*/
 		
-/* Target viewport sizes 768px and wider */
+/* Target viewport sizes 769px and wider */
 @media (min-width: 769px) {
 
+    .main-header,
+    .main-nav {
+        display: flex;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Target viewport sizes 992px and wider */
 @media (min-width: 992px) {
+    /*code should switch column flexbox layout to row style which takes up screen space better */
+    .main-header {
+        flex-direction:row;
+        justify-content: space-between;
+    }
 }
-
 
