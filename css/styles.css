@@ -7,6 +7,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 	line-height: 1.5;
 	color:black;
     font-family: sans-serif;
@@ -47,12 +50,6 @@ h2 {
     font-weight: bold;
 }
 
-footer {
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
-}
-
 
 /* ================================= 
   Base Layout Styles
@@ -77,6 +74,10 @@ footer {
 	margin-bottom: 48px;
 }
 
+.cheese-inventory {
+    flex:1;
+}
+
 .main-footer {
 	background: #ec9d1e;
 }
@@ -87,6 +88,14 @@ footer {
     text-align: center;
     display: block;
     padding: 10px 15px;
+}
+
+/*default footer list items in a column*/
+.footer-list a,
+.copyright p {
+    text-align: center;
+    display: block;
+    padding: 5px 5px;
 }
 
 .cheese-inventory {
@@ -102,8 +111,8 @@ footer {
 
 /*mobile first approach uses min-width media*/
 		
-/* Target viewport sizes 769px and wider */
-@media (min-width: 769px) {
+/* Target viewport sizes 700px and wider */
+@media (min-width: 700px) {
 
     .main-header,
     .main-nav {
