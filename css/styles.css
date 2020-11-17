@@ -1,23 +1,29 @@
 
-
-
 /* ================================= 
   Base Element Styles
 ==================================== */
+* {
+	box-sizing: border-box;
+}
 
 body {
 	line-height: 1.5;
 	color:black;
 	font-family: sans-serif;
 }
+
 p,
 ul {
 	margin: 0 0 1.5em;
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
     padding: 0 0 0 20px;
+}
+
+img {
+	max-width: 100;
 }
 
 /* --Link Styles-- */
@@ -50,151 +56,6 @@ footer {
   Base Layout Styles
 ==================================== */
 
-/* Layout Containers  */
-
-/* Shopping Cart Code 
-/* Global "table" column settings 
-	.product-image { float: left; width: 20%; }
-	.product-details { float: left; width: 37%; }
-	.product-price { float: left; width: 12%; }
-	.product-quantity { float: left; width: 10%; }
-	.product-removal { float: left; width: 9%; }
-	.product-line-price { float: left; width: 12%; text-align: right; }
-
-/* This is used as the traditional .clearfix class
-.group:before,
-.group:after {
-    content: '';
-    display: table;
-} 
-.group:after {
-    clear: both;
-}
-.group {
-    zoom: 1;
-}
-
-/* Apply clearfix in a few places 
-.shopping-cart, .column-labels, .product, .totals-item {
-	@extend .group;
-  }
-
-/* Apply dollar signs 
-.product .product-price:before, .product .product-line-price:before, .totals-value:before {
-	content: '$';
-  }
-
-  .shopping-cart {
-	margin-top: -45px;
-  }
-
-  /* Column headers 
-.column-labels {
-	  padding-bottom: 15px;
-	  margin-bottom: 15px;
-	  border-bottom: 1px solid
-	}
-	
-	.product-image, .product-details, .product-removal {
-	  text-indent: -9999px;
-	}
-  
-  
-  /* Product entries 
-.product {
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid 
-}
-.product-image {
-	  text-align: center;
-	  img {
-		width: 100px;
-	  }
-	}
-	
-	.product-details {
-		{
-			margin-right: 20px;
-			font-family: $font-bold;
-		  }
-	  .product-title {
-		margin-right: 20px;
-		font-family: $font-bold;
-	  }
-	  .product-description {
-		margin: 5px 20px 5px 0;
-		line-height: 1.4em;
-	  }
-	}
-	
-	.product-quantity {
-	  input {
-		width: 40px;
-		
-	  }
-	}
-	
-	.remove-product {
-	  border: 0;
-	  padding: 4px 8px;
-	  background-color: #c66;
-	  color: #fff;
-	  font-family: $font-bold;
-	  font-size: 12px;
-	  border-radius: 3px;
-	}
-	
-	.remove-product:hover {
-	  background-color: #a44;
-	}
-  }
-  
-  
-  /* Totals section 
-	.totals-item {
-	  float: right;
-	  clear: both;
-	  width: 100%;
-	  margin-bottom: 10px;
-	  
-.label {
-		float: left;
-		clear: both;
-		width: 79%;
-		text-align: right;
-	  }
-	  
-	  .totals-value {
-		float: right;
-		width: 21%;
-		text-align: right;
-	  }
-	
-	
-	.totals-item-total {
-	  font-family: $font-bold;
-	}
-  }
-  
-  .checkout {
-	float: right;
-	border: 0;
-	margin-top: 20px;
-	padding: 6px 25px;
-	background-color: #6b6;
-	color: #fff;
-	font-size: 25px;
-	border-radius: 3px;
-  }
-  
-  .checkout:hover {
-	background-color: #494;
-  }
-  
-*/
-/*Pre shoping cart code*/
-
 .main-header {
 	background: #ec9d1e;
 }
@@ -213,6 +74,7 @@ footer {
 }
 
 .wrapper {
+
 }
  
  
@@ -273,21 +135,19 @@ a.to_nav:focus {
 	background: firebrick;
 }
 
-/*mobile first approach uses min-width media*/
+/* ================================= 
+  Media Queries
+==================================== */
 
-	/* Target viewport sizes 576px and wider */
-	@media (min-width: 576px) {
-	
-    }
-	
-	
-	/* Target viewport sizes 768px and wider */
-	@media (min-width: 768px) {
-	
-	}
-	
-	/* Target viewport sizes 992px and wider */
-	@media (min-width: 992px) {
-	}
+/*mobile first approach uses min-width media*/
+		
+/* Target viewport sizes 768px and wider */
+@media (min-width: 769px) {
+
+}
+
+/* Target viewport sizes 992px and wider */
+@media (min-width: 992px) {
+}
 
 

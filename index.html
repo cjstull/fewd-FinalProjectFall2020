@@ -5,222 +5,199 @@
     <meta charset="UTF-8">
     <title>Wisconsin Cheese Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Links my index.html to my style sheet-->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!--CSS reset - normalize ver 8.0.1 -->
+    <!--CSS reset - normalize ver 8.0.1 To reset default browser settings -->
     <link rel="stylesheet" href="css/normalize.css">
 
     <!-- Favicon -->
     <link rel="shorcut icon" href="img/cheeseFavicon.ico">
 </head>
 
-
+<!--Opening body tag: Body contains Nav, Header, Main content, and Footer-->
 <body>
-    <div class="wrapper">
-        <header>
-            <h1 class="logo"><a href="">Nav</a></h1>
-            <a class="to_nav" href="#primary_nav">Menu</a>
-        </header>
+    <header class="main-header">
+    <h1 class="store-name"><a href="#">Wisconsin Cheese Shop</a></h1>
+        <!--Basic Nav Bar--->    
+        <ul class="nav">   
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="whichCheese.html">Which Cheese Are You?</a></li>
+          <li><a href="cheeseQuiz.html">Cheese Quiz</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> <!--Close unorderd list-->
+    </header> <!--Close Header-->
 
+    <div class="banner">
+      <img class="logo" src="https://www.placecage.com/c/200/200" alt="Cheese Store">
+      <h1 class="headline">The Best Cheese</h1>
+      <span class="tagline">Artisanal cheese for everyone to enjoy.</span>
+    </div><!--closes banner container-->
 
-            <h1 class="store-name">Wisconsin Cheese Store</a></h1>
+      <!--Main section of information-->-->
+     
    
 
-    <h2>Hello Fellow Cheese Enthusiasts!</h2>
-    <p>If you're in the mood for some delicious cheese, you've come to the right place.</p>
-    <p>Below you'll see a wonderful selection of cheeses and their associated price per ounce, feel free to select your desired amount and click 
-        total and your total cost will be calculated using Chris' nifty javascript <b>*cough* *cough*</b> I mean Cheese Magic.</p>
-    <div class="cheese-inventory"></div>
+        <h2>Hello Fellow Cheese Enthusiasts!</h2>
+        <p>If you're in the mood for some delicious cheese, you've come to the right place.</p>
+        <p>Below you'll see a wonderful selection of cheeses and their associated price per ounce, feel free to select your desired amount and click 
+            total and your total cost will be calculated using Chris' nifty javascript <b>*cough* *cough*</b> I mean Cheese Magic.</p>
+        <div class="cheese-inventory"></div>
 
 
   
-   <!---Old Code <figure>
-        <figcaption>Blue Cheese</figcaption>
-        <img src="img/blueCheese.jpeg" alt="Blue Cheese" width="200" height="200">
-    </figure>
--->
-<!--First Attempt Create Shopping Cart-->
-<div class="shopping-cart">
 
-<div class="column-labels">
-    <label class="product-image">Image</label>
-    <label class="product-details">Product</label>
-    <label class="product-price">Price</label>
-    <label class="product-quantity">Quantity</label>
-    <label class="product-removal">Remove</label>
-    <label class="product-line-price">Total</label>
-  </div>
-<!--BlueCheese Code-->
-  <div class="product">
-    <div class="product-image">
-      <img src="img/blueCheese3.jpg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Blue Cheese</div>
-      <p class="product-description">Intense strokes of piquancy from the characteristic blue veins stretch along a creamy, often crumbly texture. Slight hints of rural mushrooms give way to a mild profile consisting of creamy tones of browned butter, slowly resolving in a calm finish. Ranging from mild to sharp, blue mold cheese is made using milk from cows, goats and sheep, producing a wide variety of taste and texture combinations. Resembling fine porcelain, a clear white backdrop marbled with intersected blue veins make up the iconic appearance of these beautiful cheeses.</p>
-    </div>
-    <div class="product-price">21.00</div>
-    <div class="product-quantity">
-      <input type="number" value="2" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">21.00</div>
-  </div>
-<!--Brie Code-->
-  <div class="product">
-    <div class="product-image">
-      <img src="img/brie3.jpg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Brie</div>
-      <p class="product-description">Brie, along with its similarly creamy counterparts, is a bloomy rind cheese, immediately recognizable by its downy white rind (formed from the growth of the molds Geotrichum candidum or Penicillium camemberti) and its soft, delectably gooey paste</p>
-    </div>
-    <div class="product-price">26.99</div>
-    <div class="product-quantity">
-      <input type="number" value="1" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">26.99</div>
-  </div>
+        <div class="shopping-cart">
 
-  <!--Cheddar Code-->
-  <div class="product">
-    <div class="product-image">
-      <img src="img/cheddar3.jpg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">Cheddar Cheese</div>
-      <p class="product-description">Cheddar cheese originated in the village of Cheddar, Somerset, England.
-        Wisconsin’s Cheddar cheeses are some of the best in the world.</p>
-    </div>
-    <div class="product-price">12.00</div>
-    <div class="product-quantity">
-      <input type="number" value="1" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">12.00</div>
-  </div>
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+          </div>
+        <!--BlueCheese Code-->
+          <div class="product">
+            <div class="product-image">
+              <img src="img/blueCheese3.jpg">
+            </div>
+            <div class="product-details">
+              <div class="product-title">Blue Cheese</div>
+              <p class="product-description">Intense strokes of piquancy from the characteristic blue veins stretch along a creamy, often crumbly texture. Slight hints of rural mushrooms give way to a mild profile consisting of creamy tones of browned butter, slowly resolving in a calm finish. Ranging from mild to sharp, blue mold cheese is made using milk from cows, goats and sheep, producing a wide variety of taste and texture combinations. Resembling fine porcelain, a clear white backdrop marbled with intersected blue veins make up the iconic appearance of these beautiful cheeses.</p>
+            </div>
+            <div class="product-price">21.00</div>
+            <div class="product-quantity">
+              <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+              <button class="remove-product">
+                Remove
+              </button>
+            </div>
+            <div class="product-line-price">21.00</div>
+          </div>
+        <!--Brie Code-->
+          <div class="product">
+            <div class="product-image">
+              <img src="img/brie3.jpg">
+            </div>
+            <div class="product-details">
+              <div class="product-title">Brie</div>
+              <p class="product-description">Brie, along with its similarly creamy counterparts, is a bloomy rind cheese, immediately recognizable by its downy white rind (formed from the growth of the molds Geotrichum candidum or Penicillium camemberti) and its soft, delectably gooey paste</p>
+            </div>
+            <div class="product-price">26.99</div>
+            <div class="product-quantity">
+              <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+              <button class="remove-product">
+                Remove
+              </button>
+            </div>
+            <div class="product-line-price">26.99</div>
+          </div>
 
-    <!--Gouda Code-->
-    <div class="product">
-        <div class="product-image">
-          <img src="img/gouda3.jpg">
+          <!--Cheddar Code-->
+          <div class="product">
+            <div class="product-image">
+              <img src="img/cheddar3.jpg">
+            </div>
+            <div class="product-details">
+              <div class="product-title">Cheddar Cheese</div>
+              <p class="product-description">Cheddar cheese originated in the village of Cheddar, Somerset, England.
+                Wisconsin’s Cheddar cheeses are some of the best in the world.</p>
+            </div>
+            <div class="product-price">12.00</div>
+            <div class="product-quantity">
+              <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+              <button class="remove-product">
+                Remove
+              </button>
+            </div>
+            <div class="product-line-price">12.00</div>
+          </div>
+
+            <!--Gouda Code-->
+            <div class="product">
+                <div class="product-image">
+                  <img src="img/gouda3.jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Gouda Cheese</div>
+                  <p class="product-description">A farmhouse, raw cow milk Gouda (known as “boerenkaas” in Holland, the home of Gouda) this Gouda cheese rivals the Netherlands’ best cheeses in depth of flavor, complexity and balance.</p>
+                </div>
+                <div class="product-price">27.00</div>
+                <div class="product-quantity">
+                  <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price">27.00</div>
+              </div>
+
+
+        
+
+              <!--Legacy Code
         </div>
-        <div class="product-details">
-          <div class="product-title">Gouda Cheese</div>
-          <p class="product-description">A farmhouse, raw cow milk Gouda (known as “boerenkaas” in Holland, the home of Gouda) this Gouda cheese rivals the Netherlands’ best cheeses in depth of flavor, complexity and balance.</p>
-        </div>
-        <div class="product-price">27.00</div>
-        <div class="product-quantity">
-          <input type="number" value="1" min="1">
-        </div>
-        <div class="product-removal">
-          <button class="remove-product">
-            Remove
-          </button>
-        </div>
-        <div class="product-line-price">27.00</div>
-      </div>
+            <div class="cheese">
+                <h2 class="cheese__name">Blue Cheese</h2>
+                <p class="cheese__description">A Delicious Cheese</p>
+                <p class="cheese_price">$16</p>
+                <img src="img/blueCheese.jpeg" alt="Blue Cheese" width="200" height="200">
+          </div>
+          
+          <div class="cheese">
+                <h2 class="cheese__name">Brie</h2>
+                <p class="cheese__description">Buttery Smooth</p>
+                <p class="cheese_price">$12/oz </p>
+                <img src="img/brie.jpg" alt="Brie" width="200" height="200"/>
+
+          <div class="cheese">
+                <h2 class="cheese__name">Cheeze Wiz</h2>
+                <p class="cheese__description">Top Notch Cheese Product</p>
+                <p class="cheese_price">$2/oz </p>
+                <img src="img/cheezeWiz.jpeg" alt="Cheese Wiz" width="200" height="200"/>
+
+            <div class="cheese">
+                <h2 class="cheese__name">Gouda</h2>
+                <p class="cheese__description">Top Notch Cheese Product</p>
+                <p class="cheese_price">$13/oz </p>
+                <img src="img/gouda.jpg" alt="Gouda" width="200" height="200"/>
+            
+            <div class="cheese">
+                <h2 class="cheese__name">Parmesan</h2>
+                <p class="cheese__description">From Italy</p>
+                <p class="cheese_price">$20/oz </p>
+                <img src="img/parmesan.jpg" alt="Parmesan" width="200" height="200"/>
+            
+            <div class="cheese">
+                <h2 class="cheese__name">String Cheese</h2>
+                <p class="cheese__description">The Stringiest</p>
+                <p class="cheese_price">$1/oz </p>
+                <img src="img/stringCheese.jpg" alt="String Cheese" width="200" height="200"/>
+            </div>
+        -->
 
 
-<!--Cart Total-->
-  <div class="totals">
-    <div class="totals-item">
-      <label>Subtotal</label>
-      <div class="totals-value" id="cart-subtotal">71.97</div>
-    </div>
-    <div class="totals-item">
-      <label>Tax (5%)</label>
-      <div class="totals-value" id="cart-tax">3.60</div>
-    </div>
-    <div class="totals-item">
-      <label>Shipping</label>
-      <div class="totals-value" id="cart-shipping">15.00</div>
-    </div>
-    <div class="totals-item totals-item-total">
-      <label>Grand Total</label>
-      <div class="totals-value" id="cart-total">90.57</div>
-    </div>
-  </div>
-      
-      <button class="checkout">Checkout</button>
-
-      <!--Legacy Code
-</div>
-    <div class="cheese">
-        <h2 class="cheese__name">Blue Cheese</h2>
-        <p class="cheese__description">A Delicious Cheese</p>
-        <p class="cheese_price">$16</p>
-        <img src="img/blueCheese.jpeg" alt="Blue Cheese" width="200" height="200">
-   </div>
-   
-   <div class="cheese">
-        <h2 class="cheese__name">Brie</h2>
-        <p class="cheese__description">Buttery Smooth</p>
-        <p class="cheese_price">$12/oz </p>
-        <img src="img/brie.jpg" alt="Brie" width="200" height="200"/>
-
-   <div class="cheese">
-        <h2 class="cheese__name">Cheeze Wiz</h2>
-        <p class="cheese__description">Top Notch Cheese Product</p>
-        <p class="cheese_price">$2/oz </p>
-        <img src="img/cheezeWiz.jpeg" alt="Cheese Wiz" width="200" height="200"/>
-
-    <div class="cheese">
-        <h2 class="cheese__name">Gouda</h2>
-        <p class="cheese__description">Top Notch Cheese Product</p>
-        <p class="cheese_price">$13/oz </p>
-        <img src="img/gouda.jpg" alt="Gouda" width="200" height="200"/>
-     
-    <div class="cheese">
-        <h2 class="cheese__name">Parmesan</h2>
-        <p class="cheese__description">From Italy</p>
-        <p class="cheese_price">$20/oz </p>
-        <img src="img/parmesan.jpg" alt="Parmesan" width="200" height="200"/>
-    
-    <div class="cheese">
-        <h2 class="cheese__name">String Cheese</h2>
-        <p class="cheese__description">The Stringiest</p>
-        <p class="cheese_price">$1/oz </p>
-        <img src="img/stringCheese.jpg" alt="String Cheese" width="200" height="200"/>
-    </div>
--->
-    </div>
-
-    <nav id="primary_nav">
-        <ul>
-            <li><a href="#">Buy Cheese</a></li>
-
-            <li><a href="about.html">About Us</a></li>
-
-            <li><a href="whatcheese.html">What Cheese Are You?</a></li>
-
-            <li><a href="example-2.html">Example 2</a></li>
-
-            <li><a href="#home">Top</a> </li>
-        </ul>
-</nav>
         <footer class="main-footer">
-        <ul>
-            <!--No actual business social links, so used WI daiyland for Twitter, my LinkedIn and my GitHub-->
-            <!--Used Target _blank to open links in new window-->
-            <li><a href="https://twitter.com/WIDairyland" target="_blank" class="social twitter">Twitter - America's Dairyland </a></li>
-            <li><a href="https://www.linkedin.com/in/christopherjstull/" target="_blank" class="social linkedin">LinkedIn</a></li>
-            <li><a href="https://github.com/cjstull/" target="_blank" class="social github">Github</a></li>
-        </ul>
-        <p class="copyright">Copyright 2020, Christopher Stull</p>
-    </footer>
-</body>
+          <ul>
+              <!--No actual business social links, so used WI daiyland for Twitter, my LinkedIn and my GitHub-->
+              <!--Used Target _blank to open links in new window-->
+              <li><a href="https://twitter.com/WIDairyland" target="_blank" class="social twitter">Twitter - America's Dairyland </a></li>
+              <li><a href="https://www.linkedin.com/in/christopherjstull/" target="_blank" class="social linkedin">LinkedIn</a></li>
+              <li><a href="https://github.com/cjstull/" target="_blank" class="social github">Github</a></li>
+          </ul>
+          <p class="copyright">Copyright 2020, Christopher Stull</p>
+        </footer>
+    <!--Closing tag for body content-->  
+  </body>
 </html>
