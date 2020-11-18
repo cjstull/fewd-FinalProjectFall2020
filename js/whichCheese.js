@@ -14,13 +14,13 @@ const cheeses = [
 ];
 
  /*ensures the value returned is between 0 and 9 to be used in array location */
-function getRandomNumber() {
+function getRandomCheese() {
     const randomNumber = Math.floor(Math.random() * 10);
-    cheeseName = cheeses[randomNumber];
-    return cheeseName;
+    cheeseName = cheeses[randomNumber]; 
+    console.log(`Your cheese is ${cheeseName}`);
+    document.querySelector("#cheeseResultDisplay").innerHTML = `Your cheese is ${cheeseName}`;
 }
-console.log(`Your cheese is ${getRandomNumber()}`);
-document.querySelector("#cheeseResultDisplay").innerHTML = `Your cheese is ${getRandomNumber()}`;
+
 
 
 
