@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-	line-height: 1.5;
+	line-height: 1.2;
 	color:black;
     font-family: sans-serif;
     margin:0;
@@ -41,7 +41,7 @@ a:hover {
 	color: #6633ff;
 }
 
- 
+
 h2 {
     font-family: sans-serif;
     font-size: 32px;
@@ -69,6 +69,10 @@ h2 {
 .banner,
 .main-footer {
     text-align: center;
+}
+
+.headline {
+    margin-top: 0;
 }
 
 .banner {
@@ -116,6 +120,10 @@ font-weight: bold;
 }
 
 /*default footer list items in a column*/
+
+.copyright p {
+    font-weight:bold;
+}
 .footer-list a,
 .copyright p {
     text-align: center;
