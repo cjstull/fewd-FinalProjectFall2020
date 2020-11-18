@@ -5,8 +5,11 @@
         <title>Which cheese are you?</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <!--Links my index.html to my style sheet-->
+        <!--Links my whichCheese.html to my style sheet-->
         <link rel="stylesheet" href="css/styles.css">
+
+        <!--Links my javascript to this document-->
+        <script src="js/whichCheese.js"></script>
     
         <!--CSS reset - normalize ver 8.0.1 To reset default browser settings -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -34,15 +37,21 @@
               <span class="tagline">Artisanal cheese for everyone to enjoy.</span>
             </div><!--closes banner container-->
         
-    <div class="main">
+    <div class="main-random-generator">
         <h1>Cheese Random Generator</h1>
         <h3>The odds of getting each cheese are listed below:</h3>
         <ul>
             <li>Gouda has a 20% chance</li>
-            <li>String Cheese has a 5% chance</li>
+            <li>String Cheese has a 10% chance</li>
             <li>Cheddar has a 60% chance</li>
-            <li>Brie has a 15% chance</li>
+            <li>Brie has a 10% chance</li>
         </ul>
+
+        <p> Click the button to determine what cheese you are!</p>
+        
+        <button onclick="getRandomNumber()">Click Me</button>
+        <p class="cheeseResultDisplay"> </p>
+
     </div> <!--Close Main Div-->
         
         <footer class="main-footer">
