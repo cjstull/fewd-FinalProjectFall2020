@@ -19,10 +19,10 @@ function getRandomNumber() {
     cheeseName = cheeses[randomNumber];
     return cheeseName;
 }
-
-document.querySelector("cheeseResultDisplay").innerHTML = `Your cheese is ${getRandomNumber()}`;
-
 console.log(`Your cheese is ${getRandomNumber()}`);
+document.querySelector("#cheeseResultDisplay").innerHTML = `Your cheese is ${getRandomNumber()}`;
+
+
 
 
 
