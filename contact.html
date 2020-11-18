@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--CSS reset - normalize ver 8.0.1 To reset default browser settings -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Favicon -->
+
+        <link rel="shorcut icon" href="img/cheeseFavicon.ico">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+
+        <header class="main-header">
+            <h1 class="store-name"><a href="#">Wisconsin Cheese Shop</a></h1>
+                <!--Basic Nav Bar--->    
+                <ul class="main-nav">   
+                  <li><a href="#">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="whichCheese.html">Which Cheese Are You?</a></li>
+                  <li><a href="cheeseQuiz.html">Cheese Quiz</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul> <!--Close unorderd list-->
+            </header> <!--Close Header-->
+        
+        
+    <div class="form-container">
+        <!--Normally would POST to a server, not the contact.html file name-->
+        <form action="contact.html" method="post">
+            <h1>Contact Us</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span> Your Contact Information</legend>
+            <!--Label allows for click on the text, then changes focus the id (in this case clicking Name takes us to input with id:"name"-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="customer_name">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="customer_email">
+
+            <label for="phone">Telephone:</label>
+            <input type="phone" id="phone" name="customer_phone">
+
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span> Comments/Questions</legend>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="customer_comments"></textarea> 
+        </fieldset>    
+            <button type="submit">Contact Us</button>
+        </form>
+    </div>
+        <footer class="main-footer">
+            <ul class="footer-list">
+                <!--No actual business social links, so used WI daiyland for Twitter, my LinkedIn and my GitHub-->
+                <!--Used Target _blank to open links in new window-->
+                <li><a href="https://twitter.com/WIDairyland" target="_blank" class="social twitter">Twitter - America's Dairyland </a></li>
+                <li><a href="https://www.linkedin.com/in/christopherjstull/" target="_blank" class="social linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/cjstull/" target="_blank" class="social github">Github</a></li>
+            </ul>
+            <p class="copyright">Copyright 2020, Christopher Stull</p>
+          </footer>
+
+    </body>
+</html>
+
+
