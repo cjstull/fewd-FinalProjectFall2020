@@ -33,11 +33,17 @@ On the Which Cheese Are You? page the following features were used:
 2) An array to reflect the probability of the items, and code which calls the position of the array and displays the contents of that array based on the index.
 3) onclick button event that uses document.querySelector to pass the result of the getRandomCheese() function into the HTML
 
+"Create a form (such as a "contact us" form, validate at least 1 input, then use that information somehow")
+1) I created a contact us form that checks that name is not blank, email is in the correct format, and comments section is not blank.
+2) If any of these fail, display a message to the user at the bottom of the form - I used inline CSS on the html doc to format that message.
+
 Other features include:
-    1) The footer links have code to open the links in new pages
+    1) The footer links have code to open the links in new pages to not take user off the site
+    2) About me page - Nothing special just wanted to add it for fun
+    3) Cheese Quiz Page - I plan on expanding on this project down the road and adding a cheeseQuiz that tracks score so I can practice more js.
 
 
-Thank you
+Thank you for reviewing my project.
 
 Christopher Stull
 cjstull94@gmail.com
