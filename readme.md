@@ -18,17 +18,20 @@ I've also added a media query to the contact.html page that switches the form la
 Project is uploaded to Github Repo and has at least 5 commits
 
 The CSS Feature(s) that this project uses are as follows:
-1) A navigation menu that expands and collapses properly at desktop and mobile sizes. 
+1) "A navigation menu that expands and collapses properly at desktop and mobile sizes by switching between vertical and horizontal." 
     i) The nav menu on mobile uses flex-direction: Column
     ii) The nav menu at the higher media queries - specifically 992px use Flex-direction: Row  
 
-2) Flexbox was used on cheese inventory. Default Mobile site is in column form, as the window is expanded it switches to flexbox:row
+2) "Use Flexbox to organize content areas based on mobile or desktop views". Flexbox was used on cheese inventory on the index.html page. Default Mobile site is in column form, as the window is expanded it switches to flexbox:row
 
 The JavaScript Feature(s) that his project uses are as follows:
 On the Which Cheese Are You? page the following features were used:
-    1)Math.Random() to help calculate a random number between 0 and 9
-    2) An array to reflect the probability of the items, and code which calls the position of the array
-    3) onclick button event that uses document.querySelector to pass the result of the getRandomCheese() function into the HTML
+"Create a JavaScript function that performs some form of mathematical operation and display thre result on your Page"
+"Create and populate a JavaScript Array with one or more values and display the contents on your page"
+
+1) Math.Random() to help calculate a random number between 0 and 9
+2) An array to reflect the probability of the items, and code which calls the position of the array and displays the contents of that array based on the index.
+3) onclick button event that uses document.querySelector to pass the result of the getRandomCheese() function into the HTML
 
 Other features include:
     1) The footer links have code to open the links in new pages
