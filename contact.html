@@ -10,7 +10,7 @@
 
         <link rel="shorcut icon" href="img/cheeseFavicon.ico">
         <link rel="stylesheet" href="css/contact.css">
-        <script src="js/contactFormValidator.js"></script>
+        
     </head>
     <body>
 
@@ -28,8 +28,7 @@
         
         
     <div class="form-container">
-        <!--Normally would POST to a server, not the contact.html file name-->
-        <form action="contact.html" method="post">
+        <form id="contactForm" action="#">
             <h1>Contact Us</h1>
 
         <fieldset>
@@ -58,6 +57,7 @@
         </fieldset>    
             <button type="submit">Contact Us</button>
         </form>
+        <div id="error-message" style="color:red; font-weight:bold; text-align:center;"></div>
     </div>
         <footer class="main-footer">
             <ul class="footer-list">
@@ -69,7 +69,7 @@
             </ul>
             <p class="copyright">Copyright 2020, Christopher Stull</p>
           </footer>
-
+    <script src="js/contactFormValidator.js"></script>
     </body>
 </html>
 

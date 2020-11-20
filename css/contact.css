@@ -112,7 +112,12 @@ p {
   .form-container {
       flex:1;
   }
-
+/*deployed JS inline as opposed to stylesheet*/
+ /*  .error-message {
+      color: red;
+      font-weight: bold;
+      text-align: center;
+  } */
   .store-name a,
   .main-nav a {
       text-align: center;
