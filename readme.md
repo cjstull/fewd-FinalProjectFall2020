@@ -1,5 +1,7 @@
 README file for Front End Development Final Project
 
+Live Site Hosted Here: https://cjstull.github.io/wisconsinCheeseStore
+
 This site is a prototype for a Wisconsin Cheese Lover's Shop. The site has a list of different cheese, and their cost per pound.
 I've tried to add some humor by including things like CheezWiz to the shop. I've designed the website mobile first, and have add a navigation menu, a gallery of cheeses with descriptions about the cheese as well as the price. I've also created a page where users can click a button to find out what "cheese" they are. I've added the probability to the page to show the more "rare" cheeses.
 
