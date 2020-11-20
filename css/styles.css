@@ -143,6 +143,15 @@ font-weight: bold;
     align-items: center;
 }
 
+.about-wisconsin-cheese-shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    margin-bottom: 20px;
+}
 
 /* ================================= 
   Media Queries
